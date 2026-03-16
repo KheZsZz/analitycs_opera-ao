@@ -9,3 +9,4 @@ def main():
     
     st.dataframe(dataframe) 
 
+    st.text("Valor total de carga: " + str(dataframe["Total NF-e"].sum()))
