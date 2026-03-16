@@ -1,0 +1,6 @@
+pandas
+streamlit 
+folium
+openpyxl
+reportlab
+plotly.express
