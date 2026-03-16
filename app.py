@@ -10,3 +10,6 @@ def main():
     st.dataframe(dataframe) 
 
     st.text("Valor total de carga: " + str(dataframe["Total NF-e"].sum()))
+    
+    
+if __name__ == "__main__":    main()
