@@ -5,6 +5,8 @@ from database import Load_data
 
 def main():
     dataframe = Load_data(ID_DB="1sGNTms97VI-JV7EqSipsKOoRNIGVGIrhXjQWH010EBM", ID_SHEET="1339436993")
+    
+    st.set_page_config(page_title="Dashboard de Carga", page_icon="📊", layout="wide")
     st.title("dashboard")   
     
     st.dataframe(dataframe) 
