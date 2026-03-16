@@ -9,6 +9,13 @@ def main():
     st.set_page_config(page_title="Dashboard de Carga", page_icon="📊", layout="wide")
     st.title("dashboard")   
     
+    # Indices
+    st.metric(label="Qtd coletas", value=str(len(dataframe[dataframe['Tipo'] == "Coleta"])))
+    
+    st.metric(label="Qtd entregas", value=str(len(dataframe[dataframe['Tipo'] == "Entrega"])))
+    
+    
+    #frame
     st.dataframe(dataframe) 
 
     st.text("Valor total de carga: " + str(dataframe["Total NF-e"].sum()))
